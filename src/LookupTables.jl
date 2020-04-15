@@ -32,6 +32,6 @@ function lookup(ltable::LookupTable2D, x::Float64, y::Float64)
     return ltable.vals[xind, yind]
 end
 
-export lookup
+export LookupTable2D, lookup
 
 end # module
