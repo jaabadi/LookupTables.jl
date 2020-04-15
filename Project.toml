@@ -1,0 +1,13 @@
+name = "LookupTables"
+uuid = "d145862b-b261-4b84-a562-b5e1a07b4354"
+authors = ["Joseph Abadi <jaabadi@princeton.edu>"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
