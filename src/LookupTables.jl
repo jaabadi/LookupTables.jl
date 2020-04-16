@@ -25,6 +25,10 @@ function LookupTable2D(xvar::StepRangeLen{Float64}, yvar::StepRangeLen{Float64},
     return LookupTable2D(xvar, yvar, xdict, ydict, vals)
 end
 
+function LookupTable2D(xn::Int64, yn::Int64)
+    return LookupTable2D(range(0, stop=1, length=xn), range(0, stop=1, length=yn), zeros(xn, yn))
+end
+
 function lookup(ltable::LookupTable2D, x::Float64, y::Float64)
     xind = ltable.xdict[x]
     yind = ltable.ydict[y]
